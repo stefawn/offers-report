@@ -1,0 +1,7 @@
+var testData = 
+[	{"Recruiter":"Brian Bocchino","OfferMonth":"Feb","Status":"Accepted"},
+	{"Recruiter":"Ann Ubois","OfferMonth":"Jan","Status":"Accepted"},
+	{"Recruiter":"Ann Ubois","OfferMonth":"Jan","Status":"Accepted"}
+];
+
+var recruiterObject = alasql("SELECT Recruiter, count(Recruiter) as OfferCount, OfferMonth AS Month FROM ? WHERE Status='Accepted' GROUP BY Recruiter, OfferMonth ORDER BY Month DESC",[testData]);

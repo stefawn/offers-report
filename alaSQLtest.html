@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sup</title>
+</head>
+<body>
+test
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/alasql/0.3/alasql.min.js"></script>
+<script type="text/sql" id="sql">
+	alasql("CREATE TABLE cities (city string, population number)");
+
+    alasql("INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975), ('Berlin',3517424),  ('Madrid',3041579)");
+
+    var res = alasql("SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC");
+
+
+</script>
+
+
+</html>

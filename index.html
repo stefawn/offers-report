@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OffersAlpha</title>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+<link rel="stylesheet" href="https://d1a3f4spazzrp4.cloudfront.net/uber-fonts/4.0.0/superfine.css">
+
+<style type="text/css">
+
+    .display, .dataTables_length, .dataTables_filter {
+        font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+    .dataTables_length, .dataTables_filter {
+        font-size: 13px;
+    }
+
+    .table_content {
+        text-align: center;
+    }
+
+</style>
+
+</head>
+<body>
+    <table id="offers-table" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Recruiter</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Adele Shi</td>
+                <td class="table_content">--</td>
+                <td class="table_content">--</td>
+                <td class="table_content">2</td>
+                <td class="table_content">0</td>
+                <td class="table_content">3</td>
+                <td class="table_content">4</td>
+                <td class="table_content">1</td>
+                <td class="table_content">4</td>
+            </tr>
+            <tr>
+                <td>Amy Chen</td>
+                <td class="table_content">--</td>
+                <td class="table_content">--</td>
+                <td class="table_content">--</td>
+                <td class="table_content">--</td>
+                <td class="table_content">--</td>
+                <td class="table_content">--</td>
+                <td class="table_content">1</td>
+                <td class="table_content">7</td>
+            </tr>
+            <tr>
+                <td>Aristotle Sarfati</td>
+                <td class="table_content">--</td>
+                <td class="table_content">--</td>
+                <td class="table_content">0</td>
+                <td class="table_content">2</td>
+                <td class="table_content">5</td>
+                <td class="table_content">4</td>
+                <td class="table_content">5</td>
+                <td class="table_content">4</td>
+            </tr>
+            <tr>
+                <td>Andrea Bagoje</td>
+                <td class="table_content">3</td>
+                <td class="table_content">4</td>
+                <td class="table_content">6</td>
+                <td class="table_content">4</td>
+                <td class="table_content">7</td>
+                <td class="table_content">4</td>
+                <td class="table_content">3</td>
+                <td class="table_content">2</td>
+            </tr>
+            <tr>
+                <td>Andrew St. Germain</td>
+                <td class="table_content">--</td>
+                <td class="table_content">--</td>
+                <td class="table_content">--</td>
+                <td class="table_content">1</td>
+                <td class="table_content">5</td>
+                <td class="table_content">3</td>
+                <td class="table_content">2</td>
+                <td class="table_content">1</td>
+            </tr>
+        </tbody>
+        
+<section class="container">
+    <div class="display"></div>
+
+        <script id="table-template" type="text/x-handlebars-template">
+            {{#each this}}
+                <tr class="table_row">
+                    <td>{{Recruiter}}</td>
+                    <td class="table_content">{{jan_hires}}</td>
+                    <td class="table_content">{{feb_hires}}</td>
+                    <td class="table_content">{{mar_hires}}</td>
+                    <td class="table_content">{{may_hires}}</td>
+                    <td class="table_content">{{jun_hires}}</td>
+                    <td class="table_content">{{jul_hires}}</td>
+                    <td class="table_content">{{aug_hires}}</td>
+                </tr>
+            {{/each}}
+        </script>
+
+
+
+    </table>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+<script src = "offers-report.js"></script>
+</html>
+
